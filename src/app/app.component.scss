@@ -1,0 +1,43 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f9fafb; // gris claro
+  font-family: 'Inter', sans-serif;
+  color: #111827; // gris oscuro
+}
+
+/* Header principal */
+header {
+  background-color: #2563eb; // azul
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* Contenedor principal */
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Botones */
+button {
+  @apply px-4 py-2 rounded-md font-medium transition-all;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Enlaces */
+a {
+  color: #2563eb;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #1e40af;
+}

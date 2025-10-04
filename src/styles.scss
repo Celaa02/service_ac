@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design tokens rápidos */
+:root {
+  --brand: 29 78 216; /* indigo-600 */
+}
+
+/* Componentes reutilizables */
+@layer components {
+  .container-page { @apply max-w-5xl mx-auto px-4; }
+  .card { @apply bg-white border rounded-2xl p-4 shadow-sm; }
+  .card-hover { @apply transition hover:shadow-md hover:-translate-y-0.5; }
+  .btn { @apply inline-flex items-center justify-center px-4 py-2 rounded-xl font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2; }
+  .btn-primary { @apply btn bg-indigo-600 text-white hover:bg-indigo-700 focus:ring-indigo-500; }
+  .btn-ghost { @apply btn bg-transparent text-indigo-700 hover:bg-indigo-50; }
+  .btn-danger { @apply btn bg-red-600 text-white hover:bg-red-700 focus:ring-red-500; }
+  .input { @apply w-full rounded-xl border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500/50; }
+  .select { @apply input pr-10; }
+  .badge { @apply inline-flex items-center rounded-full px-2 py-0.5 text-xs font-semibold; }
+  .badge-green { @apply badge bg-green-100 text-green-700; }
+  .badge-red { @apply badge bg-red-100 text-red-700; }
+  .toolbar { @apply border-b bg-white/70 backdrop-blur; }
+  .toolbar-inner { @apply container-page flex h-14 items-center justify-between gap-3; }
+  .title-1 { @apply text-2xl font-bold tracking-tight; }
+  .muted { @apply text-gray-500; }
+  .skeleton { @apply animate-pulse bg-gray-200 rounded; }
+}

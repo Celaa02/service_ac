@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, Router } from '@angular/router';
+import { AuthService } from './core/services/auth.service';
+import { ToastComponent } from './core/ui/toast.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [RouterOutlet, ToastComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'bank-frontend';
+  constructor(private auth: AuthService, private router: Router) {}
+  logout() { this.auth.logout(); this.router.navigateByUrl('/login'); }
 }
+
+
