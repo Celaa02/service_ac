@@ -10,7 +10,6 @@ import { RouterLink } from '@angular/router';
   <div class="min-h-screen flex items-center justify-center">
     <div class="w-full max-w-4xl rounded-3xl shadow-2xl p-16 text-center space-y-10 border border-gray-200">
       <div class="flex justify-center">
-        <!-- Logo temporal -->
         <div class="w-24 h-24 rounded-3xl bg-indigo-600 flex items-center justify-center text-white text-4xl font-bold">
           B
         </div>

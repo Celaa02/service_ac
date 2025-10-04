@@ -22,7 +22,6 @@ import { TransactionsService, TxKindDTO } from '../../core/services/transactions
         <p class="text-3xl font-bold text-indigo-600">{{ a.balance | currency }}</p>
       </div>
 
-      <!-- Nueva transacción -->
       <div class="rounded-2xl border border-gray-200 p-10 shadow-sm text-center">
         <h2 class="text-2xl font-bold mb-6 text-gray-800">Registrar nueva transacción</h2>
 
@@ -57,7 +56,6 @@ import { TransactionsService, TxKindDTO } from '../../core/services/transactions
         </form>
       </div>
 
-      <!-- Transacciones -->
       <div>
         <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Historial de transacciones</h2>
 
