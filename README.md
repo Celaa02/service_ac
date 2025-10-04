@@ -1,7 +1,6 @@
 # 💳 ACCOUNTS - SERVICES
 
 Aplicación **SPA (Single Page Application)** desarrollada en **Angular 17 + TailwindCSS**, que permite gestionar **Cuentas de Ahorro** y **Transacciones** de un usuario autenticado.  
-Forma parte de la prueba técnica **FullStack**, cuyo backend está implementado en **Node.js/NestJS con PostgreSQL y JWT**.
 
 ---
 
