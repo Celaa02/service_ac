@@ -88,11 +88,11 @@ export class AccountCreateComponent {
 
     this.accounts.create(payload).subscribe({
       next: (res) => {
-        console.log('✅ Respuesta del backend:', res); // 👈 aquí la ves
+        console.log('✅ Respuesta del backend:', res);
         this.router.navigateByUrl('/accounts');
       },
       error: (e) => {
-        console.error('❌ Error del backend:', e); // 👈 aquí ves el error
+        console.error('❌ Error del backend:', e);
         this.error = e?.error?.message || 'Error al crear cuenta';
         this.loading = false;
       },

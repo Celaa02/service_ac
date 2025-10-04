@@ -10,7 +10,6 @@ import { AccountsService, Account } from '../../core/services/accounts.service';
   imports: [CommonModule, FormsModule, CurrencyPipe],
   template: `
   <section class="max-w-5xl mx-auto px-4 pt-10 pb-12">
-    <!-- Header + acciones -->
     <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between mb-6">
       <h1 class="text-2xl font-bold text-gray-900">Mis Cuentas</h1>
 
@@ -34,10 +33,8 @@ import { AccountsService, Account } from '../../core/services/accounts.service';
       </div>
     </div>
 
-    <!-- Tarjeta contenedora (más ligera) -->
     <div class="rounded-2xl border border-gray-200 bg-white shadow-sm">
       <div class="p-4 sm:p-6">
-        <!-- Grid de cuentas -->
         <div *ngIf="filtered.length; else empty" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <button
             type="button"
@@ -66,7 +63,6 @@ import { AccountsService, Account } from '../../core/services/accounts.service';
           </button>
         </div>
 
-        <!-- Vacío -->
         <ng-template #empty>
           <div class="text-center text-gray-500 text-sm py-12">
             No se encontraron cuentas.
